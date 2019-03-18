@@ -19,3 +19,4 @@ var characterPoorString = ""
 // Another way
 // Similiar to OO class
 let stringWithPotential = String()
+
