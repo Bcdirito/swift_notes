@@ -1,5 +1,7 @@
 // If Else and Else If Statements
 
+import Foundation
+
 // Used for conditional logic
 // If one set of parameters is met, run that logic, else run the other logic.
 // generic statement looks like:
@@ -16,13 +18,23 @@
 func greeting(meal: String){
     if meal == "breakfast" {
         print("Good Morning!")
-    } else if meal == lunch {
+    } else if meal == "lunch" {
         print("Good Afternoon!")
-    } else if meal == dinner {
+    } else if meal == "dinner" {
         print("Good Evening!")
     } else {
         print("Hello!")
     }
 }
 
+// returns "Good Morning!"
+greeting(meal: "breakfast")
+
 // returns "Good Afternoon!"
+greeting(meal: "lunch")
+
+// returns "Good Evening!"
+greeting(meal: "dinner")
+
+// returns "Hello!"
+greeting(meal: "brunch")
