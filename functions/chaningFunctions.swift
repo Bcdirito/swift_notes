@@ -19,3 +19,10 @@ print(reallyExcitedString)
 
 // example 2:
 
+func madLibGenerator(firstWord: String, secondWord: String, thirdWord: String) -> String {
+    return "\(firstWord) over the \(secondWord) way up \(thirdWord)."
+}
+
+// return "nowhere over the gray way up low."
+let notGarland = madLibGenerator(firstWord: "nowhere", secondWord: "gray", thirdWord: "low" )
+print(notGarland)
