@@ -10,3 +10,4 @@ func calculatePriceForMealWithTip(priceOfMeal: Double, tipPercentage: Double = 0
 }
 
 // adding the = sign and a value after "tipPercentage: Double" set a default value
+// same as JavaScipt
