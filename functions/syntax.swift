@@ -20,3 +20,17 @@ func sayHello() {
 sayHello()
 
 // Part 2 - Parameters:
+
+// return "Hello, Jarrod!"
+let jarrod = "Jarrod"
+
+// parameters the type for a parameter must be declared
+func sayHelloToStudent(student: String){
+    print("Hello, \(student)!")
+}
+
+sayHelloToStudent(student: jarrod)
+
+// difference between parameters and arguments
+// parameters are input values when defining the function
+// arguments are input values when calling the function
