@@ -38,3 +38,36 @@ greeting(meal: "dinner")
 
 // returns "Hello!"
 greeting(meal: "brunch")
+
+// Part 2:
+
+func admit(person: String){
+    print("Come on in, \(person)")
+}
+
+func deny(person: String){
+    print("Get out of here, \(person)")
+}
+
+func sendToOwner(person: String){
+    print("Go talk to the big shot, \(person)")
+}
+
+func screenVIP(age: Int, onGuestList: Bool, knowsTheOwner: Bool, person: String){
+  if age >= 21 && onGuestList {
+    admit(person: person)
+  } else if knowsTheOwner {
+    sendToOwner(person: person)
+  } else {
+    deny(person: person)
+  }
+}
+
+// runs admit
+screenVIP(age: 21, onGuestList: true, knowsTheOwner: false, person: "Brian")
+
+// runs sendToOwner
+screenVIP(age: 97, onGuestList: false, knowsTheOwner: true, person: "Dumbledore")
+
+// runs deny
+screenVIP(age: 13, onGuestList: true, knowsTheOwner: false, person: "Nick Birch")
