@@ -19,3 +19,4 @@ func sayHello() {
 
 sayHello()
 
+// Part 2 - Parameters:
